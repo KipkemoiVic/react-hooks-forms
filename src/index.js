@@ -1,8 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Form from './components/Form'
 
-ReactDOM.render(
-  <Form />,
-  document.getElementById('root')
-);
+function DisplayData(props) {
+  return (
+    <div>
+      <h1>{props.firstName}</h1>
+      <h1>{props.lastName}</h1>
+    </div>
+  );
+}
+
+export default DisplayData;
